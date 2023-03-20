@@ -18,11 +18,15 @@ const animationsList = [
   },
   {
     name: "Header bar animation",
-    navigationName: "",
+    navigationName: "headerBar",
   },
   {
     name: "Progress bar animation",
     navigationName: "",
+  },
+  {
+    name: "SVG Path Animation",
+    navigationName: "svgPath",
   },
 ];
 

@@ -4,6 +4,8 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import HomeScreen from "./src/HomeScreen";
 import IndicatorScreen from "./src/screens/IndicatorScreen";
+import HeaderBarAnimationScreen from "./src/screens/HeaderBarAnimationScreen";
+import SVGPathAnimationScreen from "./src/screens/SVGPathAnimationScreen";
 
 const Stack = createNativeStackNavigator();
 
@@ -21,6 +23,16 @@ const App = () => {
           options={{ headerTitle: "Indicator animation" }}
           name="indicator"
           component={IndicatorScreen}
+        />
+        <Stack.Screen
+          options={{ headerTitle: "Header bar animation" }}
+          name="headerBar"
+          component={HeaderBarAnimationScreen}
+        />
+        <Stack.Screen
+          options={{ headerTitle: "SVG path animation" }}
+          name="svgPath"
+          component={SVGPathAnimationScreen}
         />
       </Stack.Navigator>
     </NavigationContainer>
