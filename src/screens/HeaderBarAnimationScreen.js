@@ -16,7 +16,6 @@ const screenWidht = Dimensions.get("window").width;
 
 const HeaderBarAnimationScreen = () => {
   const scrollY = useSharedValue(0);
-
   const scrollHandler = useAnimatedScrollHandler({
     onScroll: (e) => {
       scrollY.value = e.contentOffset.y;
